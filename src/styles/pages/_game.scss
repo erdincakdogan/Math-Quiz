@@ -1,0 +1,84 @@
+//
+// |-----------------------------------------------------------|
+// |                                POINT    TOUR     QUESTION |
+// |                                                           |
+// |                                                           |
+// |    |        |                                             |
+// |    | MENTOR |                   CHOICE         CHOICE     |
+// |    |        |                                             |
+// |                                                           |
+// |                                          CHOICE           |
+// |                                                           |
+// |                                                           |
+// |    (left)                            (right)              |
+// |-----------------------------------------------------------|
+//
+//
+
+.game-screen {
+  padding-top: 1rem;
+  color: $main-text-color;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  .left {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .right {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  .game-stats {
+    display: flex;
+    flex-flow: nowrap row;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: center;
+  }
+  
+  .choices {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    
+    .choices-1 {
+      position: relative;
+      left: -20px;
+      align-self: flex-start;
+      cursor: pointer;
+    }
+    .choices-2 {
+      align-self: center;
+      cursor: pointer;
+    }
+    .choices-3 {
+      align-self: flex-start;
+      cursor: pointer;
+    }
+  }
+}
+.game-screen-fail {
+  background-color: #FA0000;
+  
+}
+
+.game-screen-success {
+  background-color: #00BF63;
+
+}

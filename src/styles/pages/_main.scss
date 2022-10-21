@@ -1,0 +1,179 @@
+//
+//  ---------------------------------------------
+//  |                 HEADER                    |
+//  ---------------------------------------------
+//  |             (main section)                |
+//  |                    |                      |
+//  |      STATS         |         NAV          |
+//  |                    |                      |
+//  |                    |                      |
+//  ---------------------------------------------
+//  |                  START                    |
+//  ---------------------------------------------
+//
+
+.main {
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .main-header {
+    margin-bottom: $lg-font-size;
+    color: $main-header-color;
+    width: 100%;
+    text-align: center;
+
+    .header-underline {
+      width: 30vmin;
+      margin: 0 auto;
+    }
+  }
+  .main-section {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+  }
+
+  %list-shared {
+    list-style-type: none;
+    color: $main-text-color;
+    text-align: left;
+  }
+
+  .stats {
+    @extend %list-shared;
+  }
+
+  .nav {
+    @extend %list-shared;
+    width: 15%;
+    li {
+      cursor: pointer;
+      display: inline-flex;
+    }
+  }
+
+  .start {
+    margin-top: $md-font-size;
+    width: $base-font-size * 7;
+    cursor: pointer;
+  }
+
+  @media (min-width: $breakpoint-xs) {
+    .main-header {
+      font-size: $base-font-size;
+
+      .header-underline {
+        width: $xs-font-size * 8;
+      }
+    }
+
+    %list-shared {
+      font-size: $base-font-size;
+      line-height: $xs-font-size * 1.6;
+    }
+
+    .start {
+      width: $base-font-size * 8.5;
+    }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    .main-header {
+      font-size: $sm-font-size;
+
+      .header-underline {
+        width: $sm-font-size * 8;
+      }
+    }
+
+    %list-shared {
+      font-size: $sm-font-size;
+      line-height: $sm-font-size * 1.6;
+    }
+
+    .start {
+      width: $base-font-size * 9.5;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    .main-header {
+      font-size: $md-font-size;
+
+      .header-underline {
+        width: $md-font-size * 8;
+      }
+    }
+
+    %list-shared {
+      font-size: $md-font-size;
+      line-height: $md-font-size * 1.6;
+    }
+
+    .start {
+      width: $base-font-size * 11;
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    .main-header {
+      font-size: $lg-font-size;
+
+      .header-underline {
+        width: $lg-font-size * 8;
+      }
+    }
+
+    %list-shared {
+      font-size: $lg-font-size;
+      line-height: $lg-font-size * 1.6;
+    }
+
+    .start {
+      width: $base-font-size * 12.5;
+    }
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    .main-header {
+      font-size: $xl-font-size;
+
+      .header-underline {
+        width: $xl-font-size * 8;
+      }
+    }
+
+    %list-shared {
+      font-size: $xl-font-size;
+      line-height: $xl-font-size * 1.6;
+    }
+
+    .start {
+      width: $base-font-size * 13.5;
+    }
+  }
+  @media (min-width: $breakpoint-xxl) {
+    .main-header {
+      font-size: $xxl-font-size;
+
+      .header-underline {
+        width: $xxl-font-size * 8;
+      }
+    }
+
+    %list-shared {
+      font-size: $xxl-font-size;
+      line-height: $xxl-font-size * 1.6;
+    }
+
+    .start {
+      width: $base-font-size * 15.5;
+    }
+  }
+}

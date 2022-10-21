@@ -1,0 +1,158 @@
+//
+//                 (result page)
+//  ---------------------------------------------
+//  |                    |                      |
+//  |                    |                      |
+//  |      RESULT        |       QUESTIONS      |
+//  |                    |                      |
+//  |                    |                      |
+//  |                    |                      |
+//  ---------------------------------------------
+//
+//
+
+.result-page {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  color: $main-text-color;
+  text-align: center;
+
+  .main-header {
+    margin-bottom: $lg-font-size;
+    color: $main-header-color;
+    width: 100%;
+    text-align: left;
+
+    .header-underline {
+      width: 8vmax;
+    }
+  }
+  .result-section {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 70%;
+    
+    .result {
+      height: 80%;
+      .result-list {
+        margin-bottom: $xxl-font-size;
+        list-style-type: none;
+        text-align: left;
+      }
+    }
+    .questions {
+      height: 80%;
+      .question-list {
+        list-style-type: none;
+        text-align: left;
+      }
+    }
+  }
+  .start {
+    width: $base-font-size * 6;
+    cursor: pointer;
+  }
+
+  @media (min-width: $breakpoint-xs) {
+    .main-header {
+      font-size: $base-font-size;
+
+      .header-underline {
+        width: $xs-font-size * 4;
+      }
+    }
+    .result-section {
+      font-size: $base-font-size;
+    }
+
+    .start {
+      width: $base-font-size * 8.5;
+    }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    .main-header {
+      font-size: $sm-font-size;
+
+      .header-underline {
+        width: $sm-font-size * 4;
+      }
+    }
+    .result-section {
+      font-size: $sm-font-size;
+    }
+    .start {
+      width: $base-font-size * 7.5;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    .main-header {
+      font-size: $md-font-size;
+
+      .header-underline {
+        width: $md-font-size * 4;
+      }
+    }
+    .result-section {
+      font-size: $md-font-size;
+    }
+    .start {
+      width: $base-font-size * 9;
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    .main-header {
+      font-size: $lg-font-size;
+
+      .header-underline {
+        width: $lg-font-size * 4;
+      }
+    }
+    .result-section {
+      font-size: $lg-font-size;
+    }
+    .start {
+      width: $base-font-size * 10.5;
+    }
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    .main-header {
+      font-size: $xl-font-size;
+
+      .header-underline {
+        width: $xl-font-size * 4;
+      }
+    }
+    .result-section {
+      font-size: $xl-font-size;
+    }
+    .start {
+      width: $base-font-size * 11.5;
+    }
+  }
+  @media (min-width: $breakpoint-xxl) {
+    .main-header {
+      font-size: $xxl-font-size;
+
+      .header-underline {
+        width: $xxl-font-size * 5;
+      }
+    }
+    .result-section {
+      font-size: $xxl-font-size;
+    }
+    .start {
+      width: $base-font-size * 13.5;
+    }
+  }
+}
